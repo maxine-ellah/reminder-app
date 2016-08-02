@@ -6,10 +6,10 @@ angular.module('ReminderApp', [
   $routeProvider
   // appointments route
   .when('/appointments', {
-    templateUrl: 'views/inbox.html',
+    templateUrl: 'views/appointments.html',
     controller: 'AppointmentsCtrl',
   })
-  .otherwise({ 
+  .otherwise({
     redirectTo: '/appointments'
   });
 });

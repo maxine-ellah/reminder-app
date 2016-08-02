@@ -1,6 +1,6 @@
 angular.module('ReminderApp')
-.contoller('AppointmentsCtrl',
-  function InboxCtrl ( ) {
+.controller('AppointmentsCtrl',
+  function AppointmentsCtrl ( ) {
     'use strict';
-    console.log('Inbox Loaded!')
+    console.log('Appointments Loaded!')
   });
