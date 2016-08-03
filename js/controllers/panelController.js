@@ -1,3 +1,4 @@
+var app = angular.module('ReminderApp', []);
 app.controller('PanelCtrl', function () {
   this.tab = 1;
 

@@ -1,4 +1,4 @@
-angular.module('ReminderApp')
+angular.module('ReminderApp', [])
 .controller('AppointmentsCtrl',
   function AppointmentsCtrl ( ) {
     'use strict';
