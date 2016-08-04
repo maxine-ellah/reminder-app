@@ -1,6 +1,4 @@
-// (function() {
-//   var app = angular.module('ReminderApp', []);
-  app.controller('PanelController', function () {
+app.controller('PanelController', function () {
     this.tab = 1;
 
     this.selectTab = function(setTab) {
@@ -12,4 +10,3 @@
     };
 
   });
-// })();
