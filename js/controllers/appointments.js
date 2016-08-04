@@ -1,5 +1,5 @@
-angular.module('ReminderApp', [])
-.controller('AppointmentsCtrl',
+// angular.module('ReminderApp', [])
+app.controller('AppointmentsCtrl',
   function AppointmentsCtrl ( ) {
     'use strict';
     console.log('Appointments Loaded!')

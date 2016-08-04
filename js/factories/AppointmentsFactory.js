@@ -1,4 +1,4 @@
-angular.module('ReminderApp', [])
+angular.module('ReminderApp')
   .factory('AppointmentsFactory', function AppointmentsFactory($q, $http, $location) {
     'use strict';
     var exports = {};
