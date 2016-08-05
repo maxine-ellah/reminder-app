@@ -3,11 +3,21 @@ angular.module('ReminderApp')
     'use strict';
     var exports = {};
 
+    exports.messages = [];
+
     exports.getMessages = function() {
-      return $http.get('json/appointments.json')
-      .error(function(data){
-        console.log('Theres and error!')
-      });
-    };
+        var deferred = $q.defer();
+        return $http.get('json/appointments.json')
+          .success(function (data) {
+            exports.messages = data;
+            deferred.resolve(data);
+          })
+          .error(function (data) {
+            deferred.reject(data);
+            console.log("There was an error! ", data);
+          });
+        return deferred.promise;
+      };
+
     return exports;
-  })
+  });
