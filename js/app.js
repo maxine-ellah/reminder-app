@@ -11,7 +11,10 @@ app.config(['$routeProvider',
   })
   .when('/outbox', {
     templateUrl: 'views/outbox.html',
-    controller: 'AppointmentsCtrl',
+    controller: 'OutboxCtrl',
+  })
+  .when('/outbox/email', {
+    templateUrl: 'views/email.html',
   })
   .otherwise({
     redirectTo: '/appointments'

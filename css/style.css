@@ -11,6 +11,11 @@ body {
   text-decoration: none;
 }
 
+.nav-pills>li.active>a:hover {
+  color: black;
+  background-color: white;
+}
+
 .templates {
   width: 100%;
 }
