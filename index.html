@@ -8,38 +8,28 @@
 
   </head>
 
-  <body>
+  <body ng-controller="AppointmentsCtrl">
 
     <div class="left-nav">
-      <h3>Appointments</h3>
-      <h3>Outbox</h3>
+
+      <a href="#appointments">
+        <h3>Appointments</h3>
+      </a>
+
+      <a href="#outbox">
+        <h3>Outbox</h3>
+      </a>
+
     </div>
 
-    <div class="mailboxes">
-     <section ng-controller="PanelController as panel">
-      <ul class="nav nav-pills">
-        <li ng-class="{ active: panel.isSelected(1) }">
-          <a href ng-click="panel.selectTab(1)">Messages</a>
-        </li>
-        <li ng-class="{ active: panel.isSelected(2) }">
-          <a href ng-click="panel.selectTab(2)">Outbox</a>
-        </li>
-      </ul>
+    <div ng-view></div>
 
-      <div class="panel" ng-show="panel.isSelected(1)">
-        <h1>Messages</h1>
-        <p>Description</p>
-      </div>
 
-      <div class="panel" ng-show="panel.isSelected(2)">
-        <h1>Outbox</h1>
-        <p>Description</p>
-      </div>
-    </div>
 
 
     <!-- AngularJS library -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular-route.js"></script>
 
     <!-- jQuery library -->
     <script src="lib/jquery-3.1.0.min.js"></script>
@@ -52,8 +42,8 @@
 
 
     <!-- Controllers -->
-    <script src="js/controllers/new.js"></script>
-    <script src="js/controllers/appointments.js"></script>
+    <script src="js/controllers/AppointmentsController.js"></script>
+    <script src="js/controllers/OutboxController.js"></script>
     <script src="js/controllers/PanelController.js"></script>
 
     <!-- Factories -->
