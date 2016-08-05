@@ -1,9 +1,21 @@
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
   display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+li {
+  display: inline;
+  border: 1px solid black;
+  padding-bottom: 20px;
 }
 
 #bootstrap-overrides {
@@ -11,8 +23,15 @@ body {
   text-decoration: none;
 }
 
-.nav-pills>li.active>a:hover {
-  color: black;
+.nav-tabs {
+  text-decoration: none;
+}
+
+.active {
+  background-color: white;
+}
+
+.panel {
   background-color: white;
 }
 
