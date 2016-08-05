@@ -6,6 +6,16 @@ body {
   display: flex;
 }
 
+#bootstrap-overrides {
+  /*color: inherit;*/
+  text-decoration: none;
+  color: white;
+}
+
+.nav-head {
+  text-decoration: none;
+}
+
 .left-nav {
   background-color: #313744;
   color: #D5DDE0;
