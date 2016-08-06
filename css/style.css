@@ -6,6 +6,7 @@ body {
   min-height: 100%;
   display: flex;
   font-family: "helvetica", neue, regular;
+  background-color: #F6F5F3;
 }
 
 .nav-tabs {
@@ -77,7 +78,12 @@ body {
 
 .panel {
   background-color: white;
-  /*padding-top: 6px;*/
+  margin-left: 10px;
+}
+
+.panel-contents {
+  margin: 10px;
+  padding: 50px;
 }
 
 .active {
