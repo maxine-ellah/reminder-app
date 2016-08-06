@@ -17,17 +17,26 @@
       <p>icon 4</p>
     </div>
 
-    <div class="left-nav">
+    <div class="left-nav" ng-controller="PanelController as panel">
 
-      <h3 class="left-nav-header">vReminder</h3>
+      <p class="left-nav-header">vReminder</p>
 
-      <a href="#appointments" class="inbox-links">
+      <!-- <a href="#appointments" class="inbox-links">
         <h3 class="nav-head">Appointments</h3>
       </a>
 
       <a href="#outbox" class="inbox-links">
         <h3 class="nav-head">Outbox</h3>
-      </a>
+      </a> -->
+
+      <ul>
+        <li ng-class="{ active: panel.isSelected(1) }">
+          <a href="#appointments" ng-click="panel.selectTab(1)">Appointments</a>
+        </li>
+        <li ng-class="{ active: panel.isSelected(2) }">
+          <a href="#outbox" ng-click="panel.selectTab(2)">Outbox</a>
+        </li>
+      </ul>
 
     </div>
 
@@ -54,6 +63,7 @@
     <script src="js/controllers/AppointmentsController.js"></script>
     <script src="js/controllers/OutboxController.js"></script>
     <script src="js/controllers/PanelController.js"></script>
+    <script src="js/controllers/LeftNavController.js"></script>
 
     <!-- Factories -->
     <script src="js/factories/appointmentsFactory.js"></script>

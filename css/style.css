@@ -9,6 +9,15 @@ body {
   background-color: #F6F5F3;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .nav-tabs {
   list-style-type: none;
   width: 660px;
@@ -20,6 +29,7 @@ body {
 .nav-tabs a{
   text-decoration: none;
   padding: 10px 40px;
+  color: #283436;
 }
 
 .nav-tabs li {
@@ -44,6 +54,7 @@ body {
 
 .left-nav-header {
   color: white;
+  font-size: 26px;
 }
 
 .left-nav {
@@ -52,6 +63,11 @@ body {
   left: 0;
   width: 15%;
   padding: 25px;
+}
+
+.left-nav a {
+  color: #8497a5;
+  font-size: 22px;
 }
 
 .top-bar {
@@ -88,6 +104,7 @@ body {
 
 .active {
   background-color: white;
+  font-weight: bold;
 }
 
 .templates {
