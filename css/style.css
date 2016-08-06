@@ -50,6 +50,7 @@ a {
 .left-icons {
   background-color: #2c3237;
   width: 100px;
+  text-align: center;
 }
 
 .left-nav-header {
@@ -62,7 +63,7 @@ a {
   background-color: #393f46;
   color: #D5DDE0;
   left: 0;
-  width: 15%;
+  width: 25%;
 }
 
 .left-nav a {
