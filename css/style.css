@@ -55,6 +55,7 @@ a {
 .left-nav-header {
   color: white;
   font-size: 26px;
+  margin: 26px;
 }
 
 .left-nav {
@@ -62,12 +63,16 @@ a {
   color: #D5DDE0;
   left: 0;
   width: 15%;
-  padding: 25px;
 }
 
 .left-nav a {
   color: #8497a5;
   font-size: 22px;
+  margin: 26px;
+}
+
+.left-nav ul {
+  /*margin: 26px;*/
 }
 
 .top-bar {
@@ -105,6 +110,12 @@ a {
 .active {
   background-color: white;
   font-weight: bold;
+}
+
+.selected {
+  display: block;
+  width: 100%;
+  background-color: #454657;
 }
 
 .templates {

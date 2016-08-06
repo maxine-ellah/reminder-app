@@ -30,11 +30,11 @@
       </a> -->
 
       <ul>
-        <li ng-class="{ active: panel.isSelected(1) }">
-          <a href="#appointments" ng-click="panel.selectTab(1)">Appointments</a>
+        <li ng-class="{ selected: panel.isSelected(1) }">
+          <a href="#outbox" ng-click="panel.selectTab(1)">Outbox</a>
         </li>
-        <li ng-class="{ active: panel.isSelected(2) }">
-          <a href="#outbox" ng-click="panel.selectTab(2)">Outbox</a>
+        <li ng-class="{ selected: panel.isSelected(2) }">
+          <a href="#appointments" ng-click="panel.selectTab(2)">Appointments</a>
         </li>
       </ul>
 
