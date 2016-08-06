@@ -71,8 +71,8 @@ a {
   margin: 26px;
 }
 
-.left-nav ul {
-  /*margin: 26px;*/
+.left-nav li {
+  margin-bottom: 20px;
 }
 
 .top-bar {
