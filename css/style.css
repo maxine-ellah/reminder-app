@@ -18,6 +18,15 @@ a {
   text-decoration: none;
 }
 
+table {
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
 .nav-tabs {
   list-style-type: none;
   width: 660px;
