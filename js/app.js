@@ -13,10 +13,10 @@ app.config(['$routeProvider',
     templateUrl: 'views/outbox.html',
     controller: 'OutboxCtrl',
   })
-  .when('/outbox/message', {
+  .when('/message', {
     templateUrl: 'views/email.html',
   })
   .otherwise({
-    redirectTo: '/appointments'
+    redirectTo: '/outbox'
   });
 }]);
