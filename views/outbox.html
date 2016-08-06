@@ -1,3 +1,17 @@
+<div class="top-bar">
+  <div class="search">
+    <input type="text" value="search">
+  </div>
+
+  <div class="filter">
+    <button>Filter Messages</button>
+  </div>
+
+  <div class="settings">
+    <button>Settings</button>
+  </div>
+</div>
+
 <div class="mailboxes">
  <section ng-controller="PanelController as panel">
   <ul class="nav-tabs">
@@ -10,13 +24,43 @@
   </ul>
 
   <div class="panel" ng-show="panel.isSelected(1)">
-    <h1>Messages</h1>
-    <p>Description</p>
-    <p>{{appointments.MobileNumber}}</p>
+    <div class="panel-contents">
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+    </div>
   </div>
 
   <div class="panel" ng-show="panel.isSelected(2)">
-    <h1>Failed</h1>
-    <p>Description</p>
+    <div class="panel-contents">
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+      <p>Date</p>
+      <h3>From</h3>
+      <h4>Subject</h4>
+    </div>
   </div>
+
 </div>
