@@ -15,7 +15,8 @@ ul {
 li {
   display: inline;
   border: 1px solid black;
-  padding-bottom: 20px;
+  padding: 0px 10px 20px 10px;
+  position: relative;
 }
 
 #bootstrap-overrides {
@@ -23,8 +24,30 @@ li {
   text-decoration: none;
 }
 
-.nav-tabs {
+.left-icons {
+  background-color: #2c3237;
+}
+
+.top-bar {
+  display: inline-flex;
+}
+
+.search {
+  margin-left: 10px;
+}
+
+.filter {
+  margin-right: 20px;
+  margin-left: 125%;
+}
+
+.settings {
+  margin-right: 160px;
+}
+
+.nav-tabs a{
   text-decoration: none;
+  padding: 10px 40px;
 }
 
 .active {
@@ -44,7 +67,7 @@ li {
 }
 
 .left-nav {
-  background-color: #313744;
+  background-color: #393f46;
   color: #D5DDE0;
   left: 0;
   width: 30%;
