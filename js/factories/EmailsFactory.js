@@ -1,5 +1,5 @@
 angular.module('ReminderApp')
-  .factory('AppointmentsFactory', function AppointmentsFactory($q, $http, $location) {
+  .factory('EmailsFactory', function EmailsFactory($q, $http, $location) {
     'use strict';
     var exports = {};
 
