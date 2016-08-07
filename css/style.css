@@ -129,10 +129,12 @@ left-icons {
 
 .email-content {
   position: relative;
-  width: 80%;
+  width: 50%;
   height: 100%;
   left: 135px;
   border: 5px solid red;
+  margin-left: 290px;
+
 }
 
 .panel {
@@ -141,13 +143,40 @@ left-icons {
 }
 
 .panel-contents {
-  display: flex;
+  border: 2px solid red;
+  /*display: inline-grid;*/
   margin: 10px;
   padding: 50px;
+  position: relative;
 }
 
 .panel-contents a {
   position: relative;
+}
+
+/*.email-details {
+  display: inline;
+}*/
+
+.email-details-nhi{
+  display: inline-block;
+}
+.email-details-name{
+  display: inline-block;
+
+}
+.email-details-body{
+  display: inline-block;
+  white-space: nowrap;
+  width: 35%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: -4px;
+}
+
+.email-details-date{
+  display: inline-block;
+
 }
 
 .active {

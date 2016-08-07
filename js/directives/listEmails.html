@@ -1,11 +1,23 @@
-  <div class="emails">
-  <p>You have{{emails.messages.length}}emails</p>
+  <div class="emails" ng-repeat="message in emails.messages | filter:{ from: message }">
 
-    <table>
-      <tr>
-        <td>Date</td>
-        <td>From</td>
-        <td>Subject</td>
-      </tr>
-    </table>
+
+    <div ng-controller="EmailCtrl">
+
+    <a href ng-click="showEmail()">
+
+
+    <p class="email-details-nhi">{{message.NHI}}</p>
+    <p class="email-details-name">{{message.PatientName}}</p>
+    <p class="email-details-body">{{message.Body}}</p>
+    <p class="email-details-date">{{message.ReceivedDateTime | date : 'short' }}</p>
+
+
+    </a>
+
+    <div ng-show="myEmail">
+      <email></email>
+    </div>
+
   </div>
+
+</div>

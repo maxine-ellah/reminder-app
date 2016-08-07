@@ -6,7 +6,4 @@ app.controller('EmailCtrl', function ($scope) {
       $scope.myEmail = !$scope.myEmail;
     };
 
-      $scope.showFailedEmail = function (){
-      $scope.myFailedEmail = !$scope.myFailedEmail;
-    };
 });
