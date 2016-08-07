@@ -6,16 +6,11 @@ app.config(['$routeProvider',
   $routeProvider
   // appointments route
   .when('/appointments', {
-    templateUrl: 'views/appointments.html'
-    // controller: 'AppointmentsCtrl',
+    templateUrl: 'views/emailList.html'
   })
   .when('/outbox', {
-    templateUrl: 'views/outbox.html'
-    // controller: 'OutboxCtrl',
+    templateUrl: 'views/emailList.html'
   })
-  // .when('/message', {
-  //   templateUrl: 'views/email.html'
-  // })
   .when('/', {
     redirectTo: '/outbox'
   });

@@ -18,10 +18,13 @@
 
     <div class="left-nav" ng-controller="PanelController as panel">
 
-      <p class="left-nav-header">vReminder</p>
+      <!-- <p class="left-nav-header">vReminder</p> -->
 
 
       <ul>
+        <li class="left-nav-header">
+          vReminder
+        </li>
         <li ng-class="{ selected: panel.isSelected(1) }">
           <a href="#outbox" ng-click="panel.selectTab(1)">Outbox</a>
         </li>
