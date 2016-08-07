@@ -1,5 +1,5 @@
 angular.module('ReminderApp')
-  .factory('AppointmentsFactory', function AppointmentsFactory($q, $http, $location) {
+  .factory('EmailsFactory', function EmailsFactory($q, $http, $location) {
     'use strict';
     var exports = {};
 
@@ -7,7 +7,7 @@ angular.module('ReminderApp')
 
     exports.getMessages = function() {
         var deferred = $q.defer();
-        return $http.get('json/appointments.json')
+        return $http.get('http://vensawebtest.azurewebsites.net/outbox')
           .success(function (data) {
             exports.messages = data;
             deferred.resolve(data);
