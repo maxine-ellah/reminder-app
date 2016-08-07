@@ -16,6 +16,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 table {
@@ -144,7 +145,6 @@ left-icons {
 
 .panel-contents {
   border: 2px solid red;
-  /*display: inline-grid;*/
   margin: 10px;
   padding: 50px;
   position: relative;
@@ -154,29 +154,34 @@ left-icons {
   position: relative;
 }
 
-/*.email-details {
-  display: inline;
-}*/
-
-.email-details-nhi{
+.email-details-nhi {
+  color: #d3cfc5;
   display: inline-block;
+  padding: 15px;
 }
+
 .email-details-name{
+  font-weight: 800;
   display: inline-block;
-
+  padding: 10px;
 }
+
 .email-details-body{
+  font-weight: 500;
   display: inline-block;
   white-space: nowrap;
   width: 35%;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: -4px;
+  padding-left: 60px;
 }
 
 .email-details-date{
+  font-weight: 600;
+  color: #d3cfc5;
   display: inline-block;
-
+  padding-left: 10%;
 }
 
 .active {

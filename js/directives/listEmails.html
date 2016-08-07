@@ -5,12 +5,11 @@
 
     <a href ng-click="showEmail()">
 
-
-    <p class="email-details-nhi">{{message.NHI}}</p>
-    <p class="email-details-name">{{message.PatientName}}</p>
-    <p class="email-details-body">{{message.Body}}</p>
-    <p class="email-details-date">{{message.ReceivedDateTime | date : 'short' }}</p>
-
+      <input type="checkbox">
+      <p class="email-details-nhi">{{message.NHI}}</p>
+      <p class="email-details-name">{{message.PatientName}}</p>
+      <p class="email-details-body">{{message.Body}}</p>
+      <p class="email-details-date">{{message.ReceivedDateTime | date : 'short' }}</p>
 
     </a>
 
