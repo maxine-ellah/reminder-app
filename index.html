@@ -4,22 +4,13 @@
     <meta charset="utf-8">
     <title>Vensa app</title>
     <link href="css/style.css" rel="stylesheet">
-
   </head>
 
   <body>
 
-    <div class="left-icons">
-      <p>icon 1</p>
-      <p>icon 2</p>
-      <p>icon 3</p>
-      <p>icon 4</p>
-    </div>
+    <left-icons></left-icons>
 
     <div class="left-nav" ng-controller="PanelController as panel">
-
-      <!-- <p class="left-nav-header">vReminder</p> -->
-
 
       <ul>
         <li class="left-nav-header">
@@ -36,8 +27,6 @@
     </div>
 
     <div class="templates" ng-view></div>
-
-
 
 
     <!-- AngularJS library -->
@@ -59,6 +48,8 @@
     <script src="js/controllers/EmailController.js"></script>
 
     <!-- directives -->
+    <script src="js/directives/leftIcons.js"></script>
+    <script src="js/directives/topBar.js"></script>
     <script src="js/directives/emailDirective.js"></script>
     <script src="js/directives/listEmails.js"></script>
 
