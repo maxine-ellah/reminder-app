@@ -24,7 +24,7 @@ table {
 
 td, th {
   text-align: left;
-  padding: 8px;
+  padding: 14px;
 }
 
 
@@ -88,6 +88,7 @@ td, th {
 
 .top-bar {
   display: inline-flex;
+  width: 50%;
 }
 
 .search {
@@ -110,9 +111,10 @@ td, th {
 
 
 .email-content {
-  width: 70%;
+  position: relative;
+  width: 80%;
   height: 100%;
-  margin: 0px 0px 0px 190px;
+  left: 135px;
   border: 5px solid red;
 }
 
@@ -125,6 +127,10 @@ td, th {
   display: flex;
   margin: 10px;
   padding: 50px;
+}
+
+.panel-contents a {
+  position: relative;
 }
 
 .active {

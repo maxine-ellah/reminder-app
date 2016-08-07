@@ -1,15 +1,22 @@
 <div class="top-bar">
+
   <div class="search">
     <input type="text" value="search">
   </div>
 
   <div class="filter">
-    <button>Filter Messages</button>
+    <input list="filter" placeholder="Filter">
+    <datalist id="filter">
+    <option value="This week">
+    <option value="Two weeks ago">
+    <option value="This month">
+  </datalist>
   </div>
 
   <div class="settings">
     <button>Settings</button>
   </div>
+
 </div>
 
 <div class="mailboxes">
@@ -23,53 +30,43 @@
     </li>
   </ul>
 
-  <div class="panel" ng-show="panel.isSelected(1)">
-    <div class="panel-contents">
+  <div ng-controller="EmailCtrl">
+    <div class="panel" ng-show="panel.isSelected(1)">
+      <div class="panel-contents">
 
-      <p>appointments - messages</p>
+        <p>appointments - messages</p>
 
-      <p>Date</p>
-      <h3>From</h3>
-      <h4>Subject</h4>
-      <p>Date</p>
-      <h3>From</h3>
-      <h4>Subject</h4>
-      <p>Date</p>
-      <h3>From</h3>
-      <h4>Subject</h4>
-      <p>Date</p>
-      <h3>From</h3>
-      <h4>Subject</h4>
-      <p>Date</p>
-      <h3>From</h3>
-      <h4>Subject</h4>
+        <list-emails></list-emails>
+
+        <a href ng-click="showEmail()">Hello</a>
+
+        <div ng-show="myEmail">
+
+        <email></email>
+
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <div class="panel" ng-show="panel.isSelected(2)">
-    <div class="panel-contents">
+    <div class="panel" ng-show="panel.isSelected(2)">
+      <div class="panel-contents">
 
-      <p>appointments - messages</p>
+        <p>appointments - failed</p>
 
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
+        <list-emails></list-emails>
+
+        <a href ng-click="showFailedEmail()">Hello</a>
+
+        <div ng-show="myFailedEmail">
+
+        <email></email>
+
+      </div>
 
 
     </div>
+
   </div>
-
-
+</div>
 </div>

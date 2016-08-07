@@ -13,9 +13,9 @@ app.config(['$routeProvider',
     templateUrl: 'views/outbox.html'
     // controller: 'OutboxCtrl',
   })
-  .when('/message', {
-    templateUrl: 'views/email.html'
-  })
+  // .when('/message', {
+  //   templateUrl: 'views/email.html'
+  // })
   .when('/', {
     redirectTo: '/outbox'
   });

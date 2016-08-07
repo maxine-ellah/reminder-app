@@ -1,15 +1,22 @@
 <div class="top-bar">
+
   <div class="search">
     <input type="text" value="search">
   </div>
 
   <div class="filter">
-    <button>Filter Messages</button>
+    <input list="filter" placeholder="Filter">
+    <datalist id="filter">
+    <option value="This week">
+    <option value="Two weeks ago">
+    <option value="This month">
+  </datalist>
   </div>
 
   <div class="settings">
     <button>Settings</button>
   </div>
+
 </div>
 
 <div class="mailboxes">
@@ -61,4 +68,5 @@
     </div>
 
   </div>
+</div>
 </div>
