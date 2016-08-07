@@ -23,56 +23,42 @@
     </li>
   </ul>
 
-  <div class="panel" ng-show="panel.isSelected(1)">
-    <div class="panel-contents" ng-controller="OutboxCtrl">
+  <div ng-controller="EmailCtrl">
+    <div class="panel" ng-show="panel.isSelected(1)">
+      <div class="panel-contents">
 
-      <p>outbox - messages</p>
+        <p>outbox - messages</p>
 
-      <a href ng-click="showEmail()">Hello</a>
+        <list-emails></list-emails>
 
-      <div ng-show="myEmail">
+        <a href ng-click="showEmail()">Hello</a>
 
-      <email></email>
+        <div ng-show="myEmail">
 
-      <!-- <table>
-        <tr>
-          <td>Date</td>
-          <td>From</td>
-          <td>Subject</td>
-        </tr>
-      </table> -->
+        <email></email>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel" ng-show="panel.isSelected(2)">
+      <div class="panel-contents">
+
+        <p>outbox - failed</p>
+
+        <list-emails></list-emails>
+
+        <a href ng-click="showFailedEmail()">Hello</a>
+
+        <div ng-show="myFailedEmail">
+
+        <email></email>
 
       </div>
 
-    </div>
-  </div>
-
-  <div class="panel" ng-show="panel.isSelected(2)">
-    <div class="panel-contents">
-
-      <p>outbox - failed</p>
-
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-        <p>Date</p>
-        <h3>From</h3>
-        <h4>Subject</h4>
-
-
 
     </div>
 
-
   </div>
-
 </div>

@@ -27,6 +27,7 @@ td, th {
   padding: 8px;
 }
 
+
 .nav-tabs {
   list-style-type: none;
   width: 660px;
@@ -105,6 +106,14 @@ td, th {
 .mailboxes {
   background-color: #F6F5F3;
   color: #44424C;
+}
+
+
+.email-content {
+  width: 50%;
+  height: 100%;
+  margin: 0px 0px 0px 400px;
+  border: 5px solid red;
 }
 
 .panel {
