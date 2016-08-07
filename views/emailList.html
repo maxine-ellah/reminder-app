@@ -1,0 +1,50 @@
+<top-bar></top-bar>
+
+<div class="mailboxes">
+ <section ng-controller="PanelController as panel">
+  <ul class="nav-tabs">
+    <li ng-class="{ active: panel.isSelected(1) }">
+      <a href ng-click="panel.selectTab(1)">Messages</a>
+    </li>
+    <li ng-class="{ active: panel.isSelected(2) }">
+      <a href ng-click="panel.selectTab(2)">Failed</a>
+    </li>
+  </ul>
+
+  <div ng-controller="EmailCtrl">
+
+    <div class="panel" ng-show="panel.isSelected(1)">
+      <div class="panel-contents">
+
+        <p>emails - messages</p>
+
+        <list-emails></list-emails>
+
+        <a href ng-click="showEmail()">Hello</a>
+
+        <div ng-show="myEmail">
+          <email></email>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="panel" ng-show="panel.isSelected(2)">
+      <div class="panel-contents">
+
+        <p>emails - failed</p>
+
+        <list-emails></list-emails>
+
+        <a href ng-click="showFailedEmail()">Hello</a>
+
+        <div ng-show="myFailedEmail">
+          <email></email>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

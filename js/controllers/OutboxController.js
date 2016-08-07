@@ -1,5 +1,5 @@
-app.controller('OutboxCtrl',
-  function OutboxCtrl ( ) {
-    'use strict';
-    console.log('Outbox Loaded!')
+app.controller('OutboxCtrl', function ($scope) {
+    $scope.showEmail = function (){
+      $scope.myEmail = !$scope.myEmail;
+    };
 });

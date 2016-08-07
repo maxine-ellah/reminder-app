@@ -4,32 +4,18 @@
     <meta charset="utf-8">
     <title>Vensa app</title>
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-
   </head>
 
-  <body ng-controller="AppointmentsCtrl">
+  <body>
 
-    <div class="left-icons">
-      <p>icon 1</p>
-      <p>icon 2</p>
-      <p>icon 3</p>
-      <p>icon 4</p>
-    </div>
+    <left-icons></left-icons>
 
     <div class="left-nav" ng-controller="PanelController as panel">
 
-      <p class="left-nav-header">vReminder</p>
-
-      <!-- <a href="#appointments" class="inbox-links">
-        <h3 class="nav-head">Appointments</h3>
-      </a>
-
-      <a href="#outbox" class="inbox-links">
-        <h3 class="nav-head">Outbox</h3>
-      </a> -->
-
       <ul>
+        <li class="left-nav-header">
+          vReminder
+        </li>
         <li ng-class="{ selected: panel.isSelected(1) }">
           <a href="#outbox" ng-click="panel.selectTab(1)">Outbox</a>
         </li>
@@ -43,8 +29,6 @@
     <div class="templates" ng-view></div>
 
 
-
-
     <!-- AngularJS library -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular-route.js"></script>
@@ -52,8 +36,6 @@
     <!-- jQuery library -->
     <script src="lib/jquery-3.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 
     <!-- Module -->
     <script src="js/app.js"></script>
@@ -63,6 +45,14 @@
     <script src="js/controllers/AppointmentsController.js"></script>
     <script src="js/controllers/OutboxController.js"></script>
     <script src="js/controllers/PanelController.js"></script>
+    <script src="js/controllers/EmailController.js"></script>
+
+    <!-- directives -->
+    <script src="js/directives/leftIcons.js"></script>
+    <script src="js/directives/topBar.js"></script>
+    <script src="js/directives/emailDirective.js"></script>
+    <script src="js/directives/listEmails.js"></script>
+
 
     <!-- Factories -->
     <script src="js/factories/appointmentsFactory.js"></script>
