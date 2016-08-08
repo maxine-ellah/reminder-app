@@ -1,14 +1,14 @@
-app.directive('listEmails', function(){
+app.directive('failedEmails', function(){
   return {
     restrict: 'E',
     replace: true,
     scope: true,
-    templateUrl: 'js/directives/listEmails.html',
+    templateUrl: 'js/directives/failedEmails.html',
     controllerAs: 'emails',
     controller: function (EmailsFactory) {
       this.messages = [];
 
-      EmailsFactory.getOutboxMessages()
+      EmailsFactory.getFailedMessages()
         .then(angular.bind( this, function then(){
           this.messages = EmailsFactory.messages;
         }) );
