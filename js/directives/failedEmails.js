@@ -3,7 +3,7 @@ app.directive('failedEmails', function(){
     restrict: 'E',
     replace: true,
     scope: true,
-    templateUrl: 'js/directives/failedEmails.html',
+    templateUrl: 'js/directives/templates/failedEmails.html',
     controllerAs: 'emails',
     controller: function (EmailsFactory) {
       this.messages = [];

@@ -1,6 +1,6 @@
 app.directive('emailDetail', function(){
   return {
     restrict: 'E',
-    templateUrl: 'js/directives/emailDetail.html'
+    templateUrl: 'js/directives/templates/emailDetail.html'
   };
 });

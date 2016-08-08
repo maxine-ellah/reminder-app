@@ -3,7 +3,7 @@ app.directive('messages', function(){
     restrict: 'E',
     replace: true,
     scope: true,
-    templateUrl: 'js/directives/messages.html',
+    templateUrl: 'js/directives/templates/messages.html',
     controllerAs: 'emails',
     controller: function (EmailsFactory) {
       this.messages = [];
