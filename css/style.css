@@ -12,6 +12,7 @@ body {
 ul {
   list-style-type: none;
   padding: 0px;
+  width: 200px;
 }
 
 a {
@@ -30,6 +31,10 @@ td, th {
 
 left-icons {
   background-color: #2c3237
+}
+
+left-nav {
+  background-color: #393f46;
 }
 
 .search input {
@@ -130,12 +135,13 @@ left-icons {
 
 
 .email-content {
+  border-left: 5px solid #d3cfc5;
   position: relative;
   width: 50%;
   height: 100%;
   left: 135px;
   margin-left: 290px;
-
+  padding: 15px;
 }
 
 .panel {
