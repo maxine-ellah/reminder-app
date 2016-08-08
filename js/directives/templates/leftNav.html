@@ -1,0 +1,13 @@
+<div class="left-nav" ng-controller="PanelController as panel">
+
+  <ul>
+    <li class="left-nav-header">
+      vReminder
+    </li>
+    <li ng-class="{ selected: panel.isSelected(1) }">
+      <a href="#outbox" ng-click="panel.selectTab(1)">Outbox</a>
+    </li>
+    <li ng-class="{ selected: panel.isSelected(2) }">
+      <a href="#appointments" ng-click="panel.selectTab(2)">Appointments</a>
+    </li>
+  </ul>

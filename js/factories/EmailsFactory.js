@@ -5,9 +5,23 @@ angular.module('ReminderApp')
 
     exports.messages = [];
 
-    exports.getMessages = function() {
+    exports.getOutboxMessages = function() {
         var deferred = $q.defer();
         return $http.get('http://vensawebtest.azurewebsites.net/outbox')
+        .success(function (data) {
+          exports.messages = data;
+          deferred.resolve(data);
+        })
+        .error(function (data) {
+          deferred.reject(data);
+          console.log("There was an error! ", data);
+        });
+      return deferred.promise;
+      };
+
+    exports.getFailedMessages = function() {
+        var deferred = $q.defer();
+        return $http.get('http://vensawebtest.azurewebsites.net/outbox/Failed')
           .success(function (data) {
             exports.messages = data;
             deferred.resolve(data);

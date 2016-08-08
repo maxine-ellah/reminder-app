@@ -10,21 +10,7 @@
 
     <left-icons></left-icons>
 
-    <div class="left-nav" ng-controller="PanelController as panel">
-
-      <ul>
-        <li class="left-nav-header">
-          vReminder
-        </li>
-        <li ng-class="{ selected: panel.isSelected(1) }">
-          <a href="#outbox" ng-click="panel.selectTab(1)">Outbox</a>
-        </li>
-        <li ng-class="{ selected: panel.isSelected(2) }">
-          <a href="#appointments" ng-click="panel.selectTab(2)">Appointments</a>
-        </li>
-      </ul>
-
-    </div>
+    <left-nav></left-nav>
 
     <div class="templates" ng-view></div>
 
@@ -49,9 +35,12 @@
 
     <!-- directives -->
     <script src="js/directives/leftIcons.js"></script>
+    <script src="js/directives/leftNav.js"></script>
     <script src="js/directives/topBar.js"></script>
-    <script src="js/directives/emailDirective.js"></script>
-    <script src="js/directives/listEmails.js"></script>
+    <script src="js/directives/messages.js"></script>
+    <script src="js/directives/failedEmails.js"></script>
+    <script src="js/directives/emailDetail.js"></script>
+
 
 
     <!-- Factories -->
