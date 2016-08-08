@@ -1,9 +1,9 @@
-app.directive('listEmails', function(){
+app.directive('messages', function(){
   return {
     restrict: 'E',
     replace: true,
     scope: true,
-    templateUrl: 'js/directives/listEmails.html',
+    templateUrl: 'js/directives/messages.html',
     controllerAs: 'emails',
     controller: function (EmailsFactory) {
       this.messages = [];
